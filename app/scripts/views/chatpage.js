@@ -7,7 +7,7 @@ function createChatPage() {
 			<div class="chat-window">
 			</div>
       <form class="new-message">
-        <input type="text" id="new-text">
+        <textarea id="new-text" placeholder="Write your message!"></textarea>
         <input type="submit" id="message-submit" value="SUBMIT">
       </form>
 		</div>`);
