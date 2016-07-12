@@ -1,5 +1,7 @@
 let user = {
-  username: 'test'
+  username: ''
 };
+
+window.user = user;
 
 export default user;

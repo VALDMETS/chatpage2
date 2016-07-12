@@ -1,14 +1,19 @@
 import $ from 'jquery';
-import $loginPage from './views/loginpage';
-import $chatPage from './views/chatpage';
+import createLoginPage from './views/loginpage';
+import createChatPage from './views/chatpage';
+import chatUpdate from './models/chatupdate';
 
-function route (){
+function route() {
 
     let currentHash = location.hash;
     if (currentHash === '#login') {
-      $('main').empty().append($loginPage);
+       let $loginPage = createLoginPage();
+        $('main').empty().append($loginPage);
     } else if (currentHash === '#chat') {
-      $('main').empty().append($chatPage);
+        let $chatPage = createChatPage();
+        $('main').empty().append($chatPage);
+        chatUpdate();
+        let interval = window.setInterval(chatUpdate, 1000);
     }
 }
 

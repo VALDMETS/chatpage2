@@ -1,4 +1,84 @@
 body {
-  background-color: #1EE; }
+  color: #1EE;
+  background-color: black;
+  font-family: 'Poiret One', monospace;
+  font-weight: 100; }
+
+.login-container {
+  width: 500px;
+  height: 400px;
+  border: 1px solid white;
+  margin: 100px auto;
+  box-shadow: 10px 10px #1EE; }
+
+h2 {
+  font-family: 'Poiret One', monospace;
+  font-weight: 200;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 1px 1px white; }
+
+.login-form input {
+  color: white;
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  font-family: 'Poiret One', monospace;
+  font-size: 20px;
+  background: none;
+  border: 1px solid white;
+  text-align: center;
+  outline: none;
+  padding: 10px 0; }
+
+input::-webkit-input-placeholder {
+  color: gray; }
+
+.chat-container {
+  width: 90%;
+  max-width: 900px;
+  height: 600px;
+  border: 1px solid white;
+  margin: 50px auto;
+  box-shadow: 10px 10px #1EE; }
+
+.chat-window {
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #1EE;
+  box-shadow: 1px 1px white;
+  height: 450px;
+  overflow: scroll;
+  color: white; }
+
+.message {
+  padding: 5px 0 5px 10px;
+  border-bottom: 1px solid gray; }
+
+.msgname {
+  display: inline-block;
+  color: #1EE;
+  min-width: 100px; }
+
+.msgbody {
+  display: inline-block;
+  max-width: 550px; }
+
+.msgtime {
+  display: inline-block;
+  color: gray;
+  float: right;
+  padding-right: 10px; }
+
+.delete {
+  margin: 3px 0;
+  display: block;
+  height: 16px;
+  outline: none;
+  background: none;
+  border: 1px solid gray;
+  color: gray;
+  font-family: 'Poiret One', monospace;
+  padding-bottom: 16px; }
 
 /*# sourceMappingURL=main.css.map */
