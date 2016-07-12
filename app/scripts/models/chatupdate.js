@@ -5,7 +5,7 @@ import user from './username';
 
 function chatUpdate() {
     $.ajax({
-        url: 'http://tiny-za-server.herokuapp.com/collections/benscoolchat',
+        url: 'https://tiny-za-server.herokuapp.com/collections/benscoolchat',
         type: 'GET',
         dataType: 'json',
         success: function(data) {
@@ -30,7 +30,7 @@ function chatUpdate() {
                 let currentID = ($(evt.target).parent()[0].dataset.id);
                 console.log(currentID);
                 $.ajax({
-                    url: 'http://tiny-za-server.herokuapp.com/collections/benscoolchat/' + currentID,
+                    url: 'https://tiny-za-server.herokuapp.com/collections/benscoolchat/' + currentID,
                     type: 'DELETE',
                     dataType: 'json',
                     success: function() {

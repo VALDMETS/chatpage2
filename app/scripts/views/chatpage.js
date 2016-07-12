@@ -16,7 +16,7 @@ function createChatPage() {
         evt.preventDefault();
         let messageContent = $chatPage.find('#new-text').val();
         $.ajax({
-            url: 'http://tiny-za-server.herokuapp.com/collections/benscoolchat',
+            url: 'https://tiny-za-server.herokuapp.com/collections/benscoolchat',
             type: 'POST',
             dataType: 'application/json',
             data: {
